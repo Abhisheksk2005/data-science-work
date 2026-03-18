@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Plot 1
+x1 = np.array([0, 1, 2, 3])
+y1 = np.array([3, 8, 1, 10])
+
+plt.subplot(1, 2, 1)
+plt.plot(x1, y1, marker='o', label="Data 1")
+plt.title("Plot 1")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.legend()
+
+# Plot 2
+x2 = np.array([0, 1, 2, 3])
+y2 = np.array([10, 20, 30, 40])
+
+plt.subplot(1, 2, 2)
+plt.plot(x2, y2, marker='o', color='red', label="Data 2")
+plt.title("Plot 2")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.legend()
+
+plt.suptitle("1D Array of Subplots")  # Main title
+plt.show()
