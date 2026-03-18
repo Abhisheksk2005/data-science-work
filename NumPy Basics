@@ -1,0 +1,26 @@
+#NumPy Basics – Arrays, Dimensions, Arange, Shape, Size & Reshape
+import numpy as np
+## 1. Creating a NumPy Array
+arr1 = np.array([1, 2, 3, 4, 5])
+print("1D Array:", arr1)
+## 2. Checking Number of Dimensions using ndim
+arr2 = np.array([[1, 2, 3],
+                 [4, 5, 6]])
+
+print("2D Array:")
+print(arr2)
+print("Number of dimensions:", arr2.ndim)
+## 3. Generating Values using arange() from 12 to 50 with step 3
+arr3 = np.arange(12, 51, 3)
+print(arr3)
+## 4. Shape and Size of a 2D Array
+print("Shape of array:", arr2.shape)
+print("Size of array:", arr2.size)
+## 5. Reshaping 1D Array from 15 to 30
+arr4 = np.arange(15, 31)
+print("Original 1D array:")
+print(arr4)
+
+reshaped_arr = arr4.reshape(4, 4)
+print("\nReshaped 2D array:")
+print(reshaped_arr)
